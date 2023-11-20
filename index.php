@@ -1,5 +1,19 @@
 <?php
 
+$requestPath = $_SERVER['REQUEST_URI'];
+
+switch ($requestPath) {
+    case '/main':
+        $response = 'Это главная страница';
+        break;
+    case '/home':
+        $response = 'Добро пожаловать на домашнюю страницу';
+        break;
+    default:
+        $response = '404 Страница не найдена';
+        break;
+}
+
 function dealCard() {
     $cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10];
     return $cards[array_rand($cards)];
@@ -96,5 +110,6 @@ function playGame() {
 
 while (true) {
     playGame();
+    echo $response;
 }
 ?>
