@@ -18,4 +18,4 @@ switch ($requestPath) {
 
 // Возвращаем ответ
 echo $response;
->
+?>
