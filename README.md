@@ -1,1 +1,0 @@
-# ZhamalKalmankyzy.github.io
